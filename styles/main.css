@@ -1,0 +1,121 @@
+ @font-face {
+font-family: "boli";
+src: url('../mvboli.ttf') format('truetype');
+}
+
+ body {
+	background-color: #E6E7E8;
+	margin: 0;
+	font-family: "boli";
+	color: grey;
+	font-size: 30px;
+}
+
+.title {
+	align-content: center;
+	display: block;
+	overflow: hidden;
+	margin: 0 auto 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+	animation-name: pulse;
+	-webkit-animation-name: pulse;
+
+	animation-duration: 7s;
+	-webkit-animation-duration: 7s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		opacity: 0.9;
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.95);
+		opacity: 0.9;
+	}
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.9;
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.9;
+	}
+}
+
+.backimage {
+	display: block;
+	margin: 0 auto 0 auto;
+	top: 0;
+	left: 0;
+	height: auto;
+	overflow: hidden;
+	width: 100%;
+	z-index: -1;
+}
+
+#movie {
+	overflow: hidden;
+	display: block;
+	margin: 0 auto;
+	border: 20px solid #000000;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+}
+
+#bottom-content {
+	position: relative;
+}
+
+#content {
+	width: 100%;
+	min-width: 1000px;
+
+}
+
+.quote-space {
+	padding-top: : 100px;
+	padding-bottom: 100px;
+}
+
+.left-quote {
+	text-align: center;
+	align-content: center;
+	position: relative;
+	left: 500px;
+	width: 250px;
+	overflow: hidden;
+}
+
+#footer-content {
+	background-color: black;
+	color: #E6E7E8;
+	padding-top: 50px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.contact-link {
+	width: 70px;
+	border: 1px solid #E6E7E8;
+	box-sizing: border-box;
+	border-radius: 100px;
+	background-color: black;
+}
