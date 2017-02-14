@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<!-- Site Title -->
+	<!-- Site Title & Icon -->
 	<title>Pencil - The Game</title>
-	
+	<link rel="icon" href="pencil icon.ico" />
+
 	<!-- My CSS -->
 	<link href="styles/main.css" rel="stylesheet" type="text/css" />
 
+	<!-- Jquery -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery color.js"></script>
+	
+	<!-- My script -->
+	<script src="js/main.js"></script>
 </head>
 <body>
+	<!-- Title Image -->
+	<img class="title" src="logo.svg" alt="Pencil Logo" align="middle" width="1000px" />
+
+	<!-- Video -->
+	<video id="movie" width="350px" src="Pencil.mp4" autoplay="autoplay"></video>
 	
-	<!-- All Site Content -->
-	<div id="content">
+	<!-- section below video -->
+	<div id="bottom-content">
+		<!-- pencil lines image -->
+		<img class="backimage" src="pencil marks.svg" alt="Pencil Logo">
 		
-		<!-- Title Image -->
-		<img class="title" src="logo.svg" alt="Pencil Logo" align="middle" width="1000px" />
-
-		<!-- Video -->
-		<video id="movie" width="350px" src="Pencil.mp4" autoplay="autoplay"></video>
-		
-		<!-- section below video -->
-		<div id="bottom-content">
-			<img class="backimage" src="pencil marks.svg" alt="Pencil Logo">
-		</div>
-
-		<!-- footer section -->
-		<div id="footer-content">
-			<div>©Charles Hetterich 2016</div>
-		</div>
-
-	
+		<!-- links -->
+		<a href="https://twitter.com/Chazz_Edward">
+			<div id="t-link" class="link">
+				<p class="link-text">Twitter</p>
+				<img class="link-image" src="twitter.svg" alt="Twitter logo" />
+			</div>
+		</a>
+		<a href="mailto:hetterich.charles@gmail.com">
+			<div id="e-link" class="link">
+				<p class="link-text">E-mail</p>
+				<img class="link-image" src="email.svg" alt="Email image" />
+			</div>
+		</a>
+		<a href="https://charleshetterich.github.io">
+			<div id="m-link" class="link">
+				<p class="link-text">The Dev</p>
+				<img class="link-image" src="light-bulb.svg" alt="Light Bulb" />
+			</div>
+		</a>
 	</div>
 
-<!-- My script -->
-<script src="scripts/main.js"></script>
-
+	<!-- footer section -->
+	<div id="footer-content">
+		<div>©Charles Hetterich 2016</div>
+	</div>	
 </body>
 </html>
